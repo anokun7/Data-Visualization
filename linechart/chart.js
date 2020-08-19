@@ -1,6 +1,6 @@
 async function drawLineChart() {
     // 1. Access data
-    const dataset = await d3.json("./../../my_weather_data.json");
+    const dataset = await d3.json("../my_weather_data.json");
 
     const yAccessor = (d) => d.temperatureMax;
     const dateParser = d3.timeParse("%Y-%m-%d");

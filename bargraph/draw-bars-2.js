@@ -1,6 +1,6 @@
 async function drawBars() {
     // 1. Access data
-    const dataset = await d3.json("./../../my_weather_data.json");
+    const dataset = await d3.json("../my_weather_data.json");
 
     const metricAccessor = (d) => d.humidity;
     const yAccessor = (d) => d.length;
